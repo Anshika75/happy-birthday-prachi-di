@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    </head>
+    <body>
+    <script>
+        window.addEventListener("mouseover",play);
+window.addEventListener("click",play);
+function play() { document.getElementById("a").play();
+}
+    </script>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+}
+body {
+    background-size:100% 100%;
+}
+
+.page1{
+    height:100vh;
+    width:100vw;
+    overflow:hidden;
+    background-color:pink;
+    background-color: #cc5577;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 100 60'%3E%3Cg %3E%3Crect fill='%23cc5577' width='11' height='11'/%3E%3Crect fill='%23ce5776' x='10' width='11' height='11'/%3E%3Crect fill='%23d05a76' y='10' width='11' height='11'/%3E%3Crect fill='%23d15c75' x='20' width='11' height='11'/%3E%3Crect fill='%23d35f74' x='10' y='10' width='11' height='11'/%3E%3Crect fill='%23d46174' y='20' width='11' height='11'/%3E%3Crect fill='%23d66473' x='30' width='11' height='11'/%3E%3Crect fill='%23d76673' x='20' y='10' width='11' height='11'/%3E%3Crect fill='%23d96972' x='10' y='20' width='11' height='11'/%3E%3Crect fill='%23da6c72' y='30' width='11' height='11'/%3E%3Crect fill='%23db6e71' x='40' width='11' height='11'/%3E%3Crect fill='%23dc7171' x='30' y='10' width='11' height='11'/%3E%3Crect fill='%23dd7471' x='20' y='20' width='11' height='11'/%3E%3Crect fill='%23de7671' x='10' y='30' width='11' height='11'/%3E%3Crect fill='%23df7971' y='40' width='11' height='11'/%3E%3Crect fill='%23e07c71' x='50' width='11' height='11'/%3E%3Crect fill='%23e17e71' x='40' y='10' width='11' height='11'/%3E%3Crect fill='%23e28171' x='30' y='20' width='11' height='11'/%3E%3Crect fill='%23e38471' x='20' y='30' width='11' height='11'/%3E%3Crect fill='%23e38771' x='10' y='40' width='11' height='11'/%3E%3Crect fill='%23e48972' y='50' width='11' height='11'/%3E%3Crect fill='%23e58c72' x='60' width='11' height='11'/%3E%3Crect fill='%23e58f73' x='50' y='10' width='11' height='11'/%3E%3Crect fill='%23e69173' x='40' y='20' width='11' height='11'/%3E%3Crect fill='%23e69474' x='30' y='30' width='11' height='11'/%3E%3Crect fill='%23e79775' x='20' y='40' width='11' height='11'/%3E%3Crect fill='%23e79a75' x='10' y='50' width='11' height='11'/%3E%3Crect fill='%23e89c76' x='70' width='11' height='11'/%3E%3Crect fill='%23e89f77' x='60' y='10' width='11' height='11'/%3E%3Crect fill='%23e8a278' x='50' y='20' width='11' height='11'/%3E%3Crect fill='%23e9a47a' x='40' y='30' width='11' height='11'/%3E%3Crect fill='%23e9a77b' x='30' y='40' width='11' height='11'/%3E%3Crect fill='%23e9aa7c' x='20' y='50' width='11' height='11'/%3E%3Crect fill='%23e9ac7e' x='80' width='11' height='11'/%3E%3Crect fill='%23eaaf7f' x='70' y='10' width='11' height='11'/%3E%3Crect fill='%23eab281' x='60' y='20' width='11' height='11'/%3E%3Crect fill='%23eab482' x='50' y='30' width='11' height='11'/%3E%3Crect fill='%23eab784' x='40' y='40' width='11' height='11'/%3E%3Crect fill='%23eaba86' x='30' y='50' width='11' height='11'/%3E%3Crect fill='%23ebbc88' x='90' width='11' height='11'/%3E%3Crect fill='%23ebbf8a' x='80' y='10' width='11' height='11'/%3E%3Crect fill='%23ebc18c' x='70' y='20' width='11' height='11'/%3E%3Crect fill='%23ebc48e' x='60' y='30' width='11' height='11'/%3E%3Crect fill='%23ebc790' x='50' y='40' width='11' height='11'/%3E%3Crect fill='%23ebc992' x='40' y='50' width='11' height='11'/%3E%3Crect fill='%23ebcc94' x='90' y='10' width='11' height='11'/%3E%3Crect fill='%23ebce97' x='80' y='20' width='11' height='11'/%3E%3Crect fill='%23ebd199' x='70' y='30' width='11' height='11'/%3E%3Crect fill='%23ecd39c' x='60' y='40' width='11' height='11'/%3E%3Crect fill='%23ecd69e' x='50' y='50' width='11' height='11'/%3E%3Crect fill='%23ecd8a1' x='90' y='20' width='11' height='11'/%3E%3Crect fill='%23ecdba4' x='80' y='30' width='11' height='11'/%3E%3Crect fill='%23ecdda6' x='70' y='40' width='11' height='11'/%3E%3Crect fill='%23ece0a9' x='60' y='50' width='11' height='11'/%3E%3Crect fill='%23ede2ac' x='90' y='30' width='11' height='11'/%3E%3Crect fill='%23ede4af' x='80' y='40' width='11' height='11'/%3E%3Crect fill='%23ede7b2' x='70' y='50' width='11' height='11'/%3E%3Crect fill='%23ede9b5' x='90' y='40' width='11' height='11'/%3E%3Crect fill='%23eeecb8' x='80' y='50' width='11' height='11'/%3E%3Crect fill='%23EEB' x='90' y='50' width='11' height='11'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size:cover;
+    position:relative;
+    display:flex;
+    place-items:center;
+    justify-content:center;
+    align-items:center;
+}
+
+.box{
+    height:50%;
+    width:80%;
+    position:absolute;
+    background-color:black;
+    padding:5px;
+    text-align:center;
+    font-family:'Sofia';
+    line-height:19px;
+    border-radius:5%;
+    box-shadow:0 0 0.5vmin 0.5vmin #ffd9de;
+}
+
+.box1{
+    background-color:pink;
+    top:48.5%;
+    left:52%;
+    transform:translate(-50%, -50%);
+    background-color #ffd9de;
+background-image:linear-gradient(315deg, #ffd9de 0%, #e99ba6 74%);
+    border:5px double #ffd9de;
+    animation:box1 2s 10s linear both;
+}
+
+.box3{
+   /* background-color:red;*/
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSf62Z0LHkV0seP_gobcjLw7yJtwRDJPwoEjA&usqp=CAU");
+    background-size:100% 100%;
+    border:5px double pink;
+    opacity:0.95;
+    animation: box3 3s 4s  both;
+    
+}
+
+.box2{
+    background-color:cyan;
+    top:52%;
+    left:48%;
+    transform:translate(-50%, -50%);
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    border:5px double #eec0c6;
+    animation:box2 2s 7s linear both;
+}
+
+
+
+.pfp{
+    height:150px;
+    width:150px;
+    position:absolute;
+    /*top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);*/
+    background-color:pink;
+    background-image:url("https://api.sololearn.com/Uploads/Avatars/9832097.jpg");
+    background-size:100% 100%;
+    opacity:0.7;
+    border-radius:5%;
+    box-shadow:0 0px 10px  #e0218a, 0 0px 20px #e0218a, 0 0 30px #e0218a;  
+    animation:pfp 3s 13s linear both;
+}
+
+.pfpc1{
+    height:220px;
+    width:220px;
+    border-radius:50%;
+    position:absolute;
+  /*  top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);*/
+    background-color:transparent;
+    border:5px dotted pink;
+    animation:pfp 3s 11s linear both, rotate 3s 11s linear infinite;
+}
+.pfpc2{
+    height:240px;
+    width:240px;
+    border-radius:50%;
+    position:absolute;
+  /*  top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);*/
+    background-color:transparent;
+    border:5px double hotpink;
+    animation:pfp 3s 11s linear both, rotate 3s 11s linear infinite;
+}
+
+.wisht{
+    height:15%;
+    width:80%;
+    position:absolute;
+    left:10%;
+    top:3%;
+    background-color:pink;
+    border-radius:15px;
+}
+
+.wishb{
+    height:15%;
+    width:80%;
+    position:absolute;
+    left:10%;
+    bottom:3%;
+    background-color:pink;
+    border-radius:15px;
+}
+
+.w1, .wb1{
+    background-color:#ffd9de;
+    background-image:linear-gradient(315deg, #ffd9de 0%, #e99ba6 74%);
+    
+}
+
+.w2, .wb2{
+    background-color: #f9d1b7;
+    background-image: linear-gradient(315deg, #f9d1b7 0%, #f894a4 74%);
+}
+
+.w3, .wb3{
+    background-color: #eec0c6;
+    background-image: linear-gradient(315deg, #eec0c6 0%, #e58c8a 74%);
+    
+}
+
+.w4, .wb4{
+    background-color: #ee8e6b;
+    background-image: linear-gradient(315deg, #ee8e6b 0%, #ef6da0 74%);
+}
+
+.w5, .wb5{
+    background-color: #ffffff;
+    background-image: linear-gradient(315deg, #ffffff 0%, #f47b7b 74%);
+    
+}
+
+.wisht, .wishb{
+    font-family:'Sofia';
+    padding:5px;
+    text-align:center;
+}
+
+
+    
+@keyframes box3 {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes box1 {
+  0% {
+    
+    opacity: 1;
+  }
+  100% {
+    left:100%;
+    opacity: 0;
+  }
+}
+
+@keyframes box2 {
+  0% {
+    
+    opacity: 1;
+  }
+  100% {
+    left:-100%;
+    opacity: 0;
+  }
+}
+
+
+@keyframes pfp {
+  0% {
+    transform: rotate(-720deg) scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
+@keyframes rotate{
+  0% {
+    transform: rotate(-720deg);
+    
+  }
+  100% {
+    transform: rotate(0);
+    
+  }
+}
+.w1{
+    animation:left 2s 4s linear both;
+}
+.wb1{
+    animation:right 2s 4s linear both;
+}
+.w2{
+    animation:up 2s 7s linear both;
+}
+.wb2{
+    animation:down 2s 7s linear both;
+}
+.w3{
+    animation:tr 2s 10s linear both;
+}
+.wb3{
+    animation:bl 2s 10s linear both;
+}
+.w4{
+    animation:tl 2s 13.5s linear both;
+}
+.wb4{
+    animation:br 2s 13.5s linear both;
+}
+
+@keyframes left {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+@keyframes right{
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes up{
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+@keyframes down{
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes tr {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%) translateX(100%);
+    opacity: 0;
+  }
+}
+
+@keyframes bl {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%) translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes br {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%) translateX(-100%);
+    opacity: 0;
+  }
+}
+
+
+@keyframes tl{
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%) translateX(-100%);
+    opacity: 0;
+  }
+}
+ .wisht, .wishb{
+     box-shadow:0 0 .7vmin .7vmin #2221;
+ }
+
+    </style>
+    <audio controls style=" display:none;" loop   id="a"  >
+ <source id="audio" src="https://www.dropbox.com/s/z9uagae85s4md4b/y2mate.com%20-%20Mar%20Jaayen%20%20Lyrical%20V%C3%ADdeo%20%20Loveshhuda%20%20Girish%20Navneet%20%20Atif%20Mithoon.mp3?dl=1">
+    <script>
+     Swal.fire('Happy birthday Prachi Di in ADVANCE🎊\n A small try🧗‍♀️ to express my gratitude🤗 \n It is quite simple😕 and boring😥 as I am a beginner😔 ')
+        </script>  
+      </audio> 
+        <div class="page1">
+             <div class="pfp"></div>
+            <div class="pfpc1"></div>
+            <div class="pfpc2"></div>
+            
+            <div class="wisht w5">
+                I celebrate your unconquerable spirit,
+that lets you meet every challenge
+with confidence, enthusiasm and persistence.
+I admire your sensitivity.
+            </div>
+            <div class="wisht w4">
+             When I think of exceptional people I know,
+You're right at the front of the line.
+It's because you make everyone shine.
+With all your positive vibes   
+            </div>
+            <div class="wisht w3">
+                Another year has come and gone;
+The sands of time keep trickling away.
+Your birthday reminds me to let you know
+I'm thankful for you each and every day.
+            </div>
+            <div class="wisht w2">
+                Every year that comes and goes
+Brings its flowers and its snows;
+You're really special; you're the peak,
+One of a kind, you are unique
+            </div>
+            <div class="wisht w1">
+                Every one of your birthdays
+is a gift to the rest of us
+who have had the pleasure
+of having you in our lives
+for another year. May you
+enjoy many more.
+            </div>
+            <div class="wishb wb5">
+                On your special day,
+I'm thinking of all the wonderful things you are
+that bring so much joy to others, including me! I treasure your uniqueness; 
+            </div>
+            <div class="wishb wb4">
+                When I want to see someone who’s special and fun,
+I don't have to think very hard,
+For one of the nicest people I know
+I can find in my own backyard.
+            </div>
+            <div class="wishb wb3">
+           Each year your birthday reminds me
+That I really want to say
+I'm very glad I know you;
+I think of you each day. I truly appreciate you,
+            </div>
+            <div class="wishb wb2">
+               We celebrate a person who
+Brings happiness to everyone,
+Someone who gives more than she gets,
+And fills our lives with joy and fun. 
+            </div>
+            <div class="wishb wb1">
+                Every one of your birthdays
+reminds us of your sensitivity
+and service to others,
+and other delights
+too numerous to name
+that we are gifted with
+just by knowing you.
+            </div>
+            
+            <div class="box box1">Someone, who’s been with me always<br>
+Someone, who’s seen me at my worst<br>
+Someone, who’s always got my back<br>
+Someone, who when I’m sad, will know first<br>
+Someone, who knows what makes me tick<br>
+Someone, who can sense when I’m in doubt<br>
+Someone, who believes in me no matter what<br>
+Someone, who knows me inside out<br>
+That someone, I often take for granted<br>
+That someone, is an angel in disguise<br>
+A friend, a gf and much more<br>
+She is my sister, my life’s biggest prize<br>
+Thank You Prachi The Pari Di
+
+</div>
+            <div class="box box2">
+                Columbus was a famous man;
+Einstein was one, too.
+They were known to all, but then,
+Along came you.<br>
+But your fine qualities outshine them all;
+You're the greatest one we know.<br>
+To us, your name will always charm;
+Your features we'll never forget.
+You'll always be special and famous to us;
+<br>
+On your birthday,
+I'm thinking about how much light and sparkle
+you freely dispense wherever you go,
+how your sunny smile lights up any gathering.
+Every birthday marks another year
+of you radiating positive, happy energy,
+contagious happiness
+that infects all who come in contact with you.
+
+            </div>
+            <div class="box box3"></div>
+           
+        </div>
+    </body>
+</html>
